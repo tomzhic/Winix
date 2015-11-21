@@ -4,10 +4,12 @@ Winix
 #### The Unix-like Windows Shell
 
 ##### cmd snapshot
-    
-##### zsh snapshot
+![](https://raw.githubusercontent.com/kiddlu/Winix/master/snapshot/img1.png)
 
-#### In order to install Winix just download [Winix.zip]() run the install.cmd script
+##### zsh snapshot
+![](https://raw.githubusercontent.com/kiddlu/Winix/master/snapshot/img2.png)
+
+#### To install Winix just download [Winix](http://pan.baidu.com/s/1o6tOOXk), unzip and run install.cmd script.
 
 #### Default directory is D:\Winix, if you want to change, pls modify install.cmd yourself.
 
@@ -21,5 +23,3 @@ Winix
 ----------
 
 #### Kidd Lu
-
-
