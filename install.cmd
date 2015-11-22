@@ -7,7 +7,7 @@ set install_mobaxterm=yes
 set install_adbputty=yes
 set install_notepadpp=yes
 set install_sublime_text=yes
-set do_final_job=no
+set do_final_job=yes
 
 set SCRIPT_PATH=%~dp0
 set UNZIPPER=%SCRIPT_PATH%\tools\unzip.exe
@@ -92,10 +92,6 @@ mkdir %ADBPUTTY_ROOT%
 
 :FINAL
 if not %do_final_job%==yes goto END
-
-rem set WINIX_ROOT to env
-wmic ENVIRONMENT where "name='WINIX_ROOT'" delete
-wmic ENVIRONMENT create name="WINIX_ROOT",username="<system>",VariableValue="%WINIX_ROOT%"
 
 echo Now We need to clean & reboot
 %CYGWIN_ROOT%\bin\bash -l -c "rm -rf /xcfg"
