@@ -11,21 +11,21 @@ Winix
 ##### zsh snapshot
 ![](https://raw.githubusercontent.com/kiddlu/Winix/master/snapshot/img2.png)
 
-#### To install Winix just download [Winix](http://pan.baidu.com/s/1qWH1yOk), unzip and run install.cmd script.
+#### To install Winix just download [Winix](http://pan.baidu.com/s/1dDc60MX), unzip and run install.cmd script.
 
 #### Default directory is D:\Winix, if you want to change, pls modify install.cmd yourself.
 
 	Packages Version:
-	Cygwin:      2.873
-	Cmder:       1.2.0
-	Python:      2.7.10
-	MobaXterm:   7.7
-	adbputty:    0.64
+	Cygwin:           2.873
+	Cmder:            1.2.0
+	Python:           2.7.10
+	MobaXterm:        7.7
+	adbputty:         CN-0.64(No EN version right now)
+	Sublime Text:     2.0.2
 
 #### TODO
 	Notepad++
-	Sublime Text
-	MarkdownPad 2
+	MarkdownPad
 	Everything
 	Listary
 	HTTP File Server

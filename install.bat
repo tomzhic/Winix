@@ -5,8 +5,8 @@ set install_cmder=yes
 set install_python_win32=yes
 set install_mobaxterm=yes
 set install_adbputty=yes
-set install_notepadpp=yes
 set install_sublime_text=yes
+set install_notepadpp=yes
 set do_final_job=yes
 
 set SCRIPT_PATH=%~dp0
@@ -17,13 +17,15 @@ set CYGWIN_MIRROR=http://mirrors.163.com/cygwin
 set PYTHON_MSI=%SCRIPT_PATH%\dist\python-2.7.10.amd64.msi
 set MOBAXTERM_EXE=%SCRIPT_PATH%\dist\MobaXterm.exe
 set ADBPUTTY_ZIP=%SCRIPT_PATH%\dist\adbputty.zip
+set SUBLIME_ZIP=%SCRIPT_PATH%\dist\Sublime Text 2.0.2 x64.zip
 
 set WINIX_ROOT=D:\Winix
 set CYGWIN_ROOT=%WINIX_ROOT%\Cygwin
 set CMDER_ROOT=%WINIX_ROOT%\Cmder
 set PYTHON_ROOT=%WINIX_ROOT%\Python
 set MOBAXTERM_ROOT=%WINIX_ROOT%\MobaXterm
-set ADBPUTTY_ROOT=%WINIX_ROOT%\adbputty
+set ADBPUTTY_ROOT=%WINIX_ROOT%\Android\adbputty
+set SUBLIME_ROOT=%WINIX_ROOT%\Sublime
 
 rem set WINIX_ROOT to env
 wmic ENVIRONMENT where "name='WINIX_ROOT'" delete
@@ -86,9 +88,23 @@ copy %MOBAXTERM_EXE% %MOBAXTERM_ROOT%\
 copy %CYGWIN_ROOT%\xcfg\MobaXterm.ini %MOBAXTERM_ROOT%\
 
 :ADBPUTTY
-if not %install_adbputty%==yes goto FINAL
+if not %install_adbputty%==yes goto SUBLIME
 mkdir %ADBPUTTY_ROOT%
 "%UNZIPPER%" -o "%ADBPUTTY_ZIP%" -d "%ADBPUTTY_ROOT%"
+
+:SUBLIME
+if not %install_sublime_text%==yes goto FINAL
+mkdir %SUBLIME_ROOT%
+"%UNZIPPER%" -o "%SUBLIME_ZIP%" -d "%SUBLIME_ROOT%"
+
+%CYGWIN_ROOT%\bin\bash -l -c "git clone https://github.com/kiddlu/hello-sublime.git /mysublime"
+xcopy %CYGWIN_ROOT%\mysublime\Data %SUBLIME_ROOT%\Data /E /Y
+%CYGWIN_ROOT%\bin\bash -l -c "rm -rf /mysublime"
+
+reg add "HKEY_CLASSES_ROOT\*\shell\SubLime" /ve /t REG_SZ /d "Edit with Sublime Text" /f >nul
+reg add "HKEY_CLASSES_ROOT\*\shell\SubLime\Command" /ve /t REG_SZ /d "\"%SUBLIME_ROOT%\sublime_text.exe\" \"%%1\"" /f >nul
+reg add "HKEY_CLASSES_ROOT\Directory\shell\SubLime" /ve /t REG_SZ /d "Edit with Sublime Text" /f >nul
+reg add "HKEY_CLASSES_ROOT\Directory\shell\SubLime\Command" /ve /t REG_SZ /d "\"%SUBLIME_ROOT%\sublime_text.exe\" \"%%1\"" /f >nul
 
 :FINAL
 if not %do_final_job%==yes goto END
