@@ -22,13 +22,13 @@ Winix
 	MobaXterm:        7.7
 	adbputty:         CN-0.64(No EN version right now)
 	Sublime Text:     2.0.2
+	HTTP File Server  2.3g
 
 #### TODO
 	Notepad++
 	MarkdownPad
 	Everything
 	Listary
-	HTTP File Server
 	PicPick
 	Linux ramparser
 	MyChrome

@@ -6,7 +6,7 @@ set install_python_win32=yes
 set install_mobaxterm=yes
 set install_adbputty=yes
 set install_sublime_text=yes
-set install_notepadpp=yes
+set install_hfs=yes
 set do_final_job=yes
 
 set SCRIPT_PATH=%~dp0
@@ -18,6 +18,7 @@ set PYTHON_MSI=%SCRIPT_PATH%\dist\python-2.7.10.amd64.msi
 set MOBAXTERM_EXE=%SCRIPT_PATH%\dist\MobaXterm.exe
 set ADBPUTTY_ZIP=%SCRIPT_PATH%\dist\adbputty.zip
 set SUBLIME_ZIP=%SCRIPT_PATH%\dist\Sublime Text 2.0.2 x64.zip
+set HFS_EXE=%SCRIPT_PATH%\dist\hfs.exe
 
 set WINIXROOT=D:\Winix
 set CYGWIN_ROOT=%WINIXROOT%\Cygwin
@@ -26,6 +27,7 @@ set PYTHON_ROOT=%WINIXROOT%\Python
 set MOBAXTERM_ROOT=%WINIXROOT%\MobaXterm
 set ADBPUTTY_ROOT=%WINIXROOT%\Android\adbputty
 set SUBLIME_ROOT=%WINIXROOT%\Sublime
+set HFS_ROOT=%WINIXROOT%\Hfs
 
 rem set WINIXROOT to env
 wmic ENVIRONMENT where "name='WINIXROOT'" delete
@@ -93,7 +95,7 @@ mkdir %ADBPUTTY_ROOT%
 "%UNZIPPER%" -o "%ADBPUTTY_ZIP%" -d "%ADBPUTTY_ROOT%"
 
 :SUBLIME
-if not %install_sublime_text%==yes goto FINAL
+if not %install_sublime_text%==yes goto HFS
 mkdir %SUBLIME_ROOT%
 "%UNZIPPER%" -o "%SUBLIME_ZIP%" -d "%SUBLIME_ROOT%"
 
@@ -106,6 +108,11 @@ reg add "HKEY_CLASSES_ROOT\*\shell\SubLime" /ve /t REG_SZ /d "Edit with Sublime 
 reg add "HKEY_CLASSES_ROOT\*\shell\SubLime\Command" /ve /t REG_SZ /d "\"%SUBLIME_ROOT%\sublime_text.exe\" \"%%1\"" /f >nul
 reg add "HKEY_CLASSES_ROOT\Directory\shell\SubLime" /ve /t REG_SZ /d "Edit with Sublime Text" /f >nul
 reg add "HKEY_CLASSES_ROOT\Directory\shell\SubLime\Command" /ve /t REG_SZ /d "\"%SUBLIME_ROOT%\sublime_text.exe\" \"%%1\"" /f >nul
+
+:HFS
+if not %install_hfs%==yes goto FINAL
+mkdir %HFS_ROOT%
+copy %HFS_EXE% %HFS_ROOT%\
 
 :FINAL
 if not %do_final_job%==yes goto END
