@@ -19,17 +19,17 @@ set MOBAXTERM_EXE=%SCRIPT_PATH%\dist\MobaXterm.exe
 set ADBPUTTY_ZIP=%SCRIPT_PATH%\dist\adbputty.zip
 set SUBLIME_ZIP=%SCRIPT_PATH%\dist\Sublime Text 2.0.2 x64.zip
 
-set WINIX_ROOT=D:\Winix
-set CYGWIN_ROOT=%WINIX_ROOT%\Cygwin
-set CMDER_ROOT=%WINIX_ROOT%\Cmder
-set PYTHON_ROOT=%WINIX_ROOT%\Python
-set MOBAXTERM_ROOT=%WINIX_ROOT%\MobaXterm
-set ADBPUTTY_ROOT=%WINIX_ROOT%\Android\adbputty
-set SUBLIME_ROOT=%WINIX_ROOT%\Sublime
+set WINIXROOT=D:\Winix
+set CYGWIN_ROOT=%WINIXROOT%\Cygwin
+set CMDER_ROOT=%WINIXROOT%\Cmder
+set PYTHON_ROOT=%WINIXROOT%\Python
+set MOBAXTERM_ROOT=%WINIXROOT%\MobaXterm
+set ADBPUTTY_ROOT=%WINIXROOT%\Android\adbputty
+set SUBLIME_ROOT=%WINIXROOT%\Sublime
 
-rem set WINIX_ROOT to env
-wmic ENVIRONMENT where "name='WINIX_ROOT'" delete
-wmic ENVIRONMENT create name="WINIX_ROOT",username="<system>",VariableValue="%WINIX_ROOT%"
+rem set WINIXROOT to env
+wmic ENVIRONMENT where "name='WINIXROOT'" delete
+wmic ENVIRONMENT create name="WINIXROOT",username="<system>",VariableValue="%WINIX_ROOT%"
 
 :CYGWIN
 if not %install_cygwin%==yes goto CMDER
