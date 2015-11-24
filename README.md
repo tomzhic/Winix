@@ -11,7 +11,7 @@ Winix
 ##### zsh snapshot
 ![](https://raw.githubusercontent.com/kiddlu/Winix/master/snapshot/img2.png)
 
-#### To install Winix just download [Winix](http://pan.baidu.com/s/1dDc60MX), unzip and run install.cmd script.
+#### To install Winix just download [Winix](http://pan.baidu.com/s/1dDI3SXF), unzip and run install.cmd script.
 
 #### Default directory is D:\Winix, if you want to change, pls modify install.cmd yourself.
 
