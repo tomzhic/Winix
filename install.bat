@@ -29,7 +29,7 @@ set SUBLIME_ROOT=%WINIXROOT%\Sublime
 
 rem set WINIXROOT to env
 wmic ENVIRONMENT where "name='WINIXROOT'" delete
-wmic ENVIRONMENT create name="WINIXROOT",username="<system>",VariableValue="%WINIX_ROOT%"
+wmic ENVIRONMENT create name="WINIXROOT",username="<system>",VariableValue="%WINIXROOT%"
 
 :CYGWIN
 if not %install_cygwin%==yes goto CMDER
