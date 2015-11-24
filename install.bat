@@ -99,6 +99,7 @@ mkdir %SUBLIME_ROOT%
 
 %CYGWIN_ROOT%\bin\bash -l -c "git clone https://github.com/kiddlu/hello-sublime.git /mysublime"
 xcopy %CYGWIN_ROOT%\mysublime\Data %SUBLIME_ROOT%\Data /E /Y
+xcopy %CYGWIN_ROOT%\mysublime\Pristine Packages\Package Control.sublime-package %SUBLIME_ROOT%\Pristine Packages\ /E /Y
 %CYGWIN_ROOT%\bin\bash -l -c "rm -rf /mysublime"
 
 reg add "HKEY_CLASSES_ROOT\*\shell\SubLime" /ve /t REG_SZ /d "Edit with Sublime Text" /f >nul
