@@ -1,16 +1,17 @@
 @echo on
 
 set install_cygwin=yes
-set install_cmder=ye
-set install_python_win32=ye
-set install_mobaxterm=ye
-set install_adbputty=ye
-set install_sublime_text=ye
-set install_hfs=ye
-set install_everything==ye
-set install_listary==ye
+set install_cmder=yes
+set install_python_win32=yes
+set install_mobaxterm=yes
+set install_adbputty=yes
+set install_notepadpp=yes
+set install_sublime_text=yes
+set install_hfs=yes
+set install_everything==yes
+set install_listary==yes
 set install_markdownpad==yes
-set do_final_job=ye
+set do_final_job=yes
 
 set WINIXROOT=D:\Winix
 set CYGWIN_ROOT=%WINIXROOT%\Cygwin
@@ -18,6 +19,7 @@ set CMDER_ROOT=%WINIXROOT%\Cmder
 set PYTHON_ROOT=%WINIXROOT%\Python
 set MOBAXTERM_ROOT=%WINIXROOT%\MobaXterm
 set ADBPUTTY_ROOT=%WINIXROOT%\Android\adbputty
+set NOTEPADPP_ROOT=%WINIXROOT%\Notepad++
 set SUBLIME_ROOT=%WINIXROOT%\Sublime
 set HFS_ROOT=%WINIXROOT%\Hfs
 set EVERYTHING_ROOT=%WINIXROOT%\Everything
@@ -32,6 +34,7 @@ set CYGWIN_MIRROR=http://mirrors.163.com/cygwin
 set PYTHON_MSI=%SCRIPT_PATH%\dist\python-2.7.10.amd64.msi
 set MOBAXTERM_EXE=%SCRIPT_PATH%\dist\MobaXterm.exe
 set ADBPUTTY_ZIP=%SCRIPT_PATH%\dist\adbputty.zip
+set NOTEPADPP_ZIP=%SCRIPT_PATH%\dist\npp.6.8.6.bin.zip
 set SUBLIME_ZIP=%SCRIPT_PATH%\dist\Sublime Text 2.0.2 x64.zip
 set HFS_EXE=%SCRIPT_PATH%\dist\hfs.exe
 set EVERYTHING_ZIP=%SCRIPT_PATH%\dist\Everything-1.3.4.686.x64.Multilingual.zip
@@ -99,9 +102,18 @@ copy %MOBAXTERM_EXE% %MOBAXTERM_ROOT%\
 copy %CYGWIN_ROOT%\xcfg\MobaXterm.ini %MOBAXTERM_ROOT%\
 
 :ADBPUTTY
-if not %install_adbputty%==yes goto SUBLIME
+if not %install_adbputty%==yes goto NOTEPADPP
 mkdir %ADBPUTTY_ROOT%
 "%UNZIPPER%" -o "%ADBPUTTY_ZIP%" -d "%ADBPUTTY_ROOT%"
+
+:NOTEPADPP
+if not %install_notepadpp%==yes goto SUBLIME
+mkdir %NOTEPADPP_ROOT%
+"%UNZIPPER%" -o "%NOTEPADPP_ZIP%" -d "%NOTEPADPP_ROOT%"
+xcopy %CYGWIN_ROOT%\xcfg\Notepad++.config.xml %NOTEPADPP_ROOT%\config.xml /y
+xcopy %CYGWIN_ROOT%\xcfg\Notepad++.stylers.xml %NOTEPADPP_ROOT%\stylers.xml /y
+reg add "HKEY_CLASSES_ROOT\*\shell\Notepad++" /ve /t REG_SZ /d "Edit with Notepad++" /f >nul
+reg add "HKEY_CLASSES_ROOT\*\shell\Notepad++\Command" /ve /t REG_SZ /d "\"%NOTEPADPP_ROOT%\notepad++.exe\" \"%%1\"" /f >nul
 
 :SUBLIME
 if not %install_sublime_text%==yes goto HFS
