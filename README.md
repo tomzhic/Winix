@@ -1,9 +1,16 @@
 Winix
 ----------
 
-#### The Unix-like Windows Shell & Environment
-	It contains lots of great software like cmder,cygwin,python,
-	mobaxterm,notepad++,everyehing...which make your work more effective
+#### An excellent Windows environment which makes your work more effective.
+##### It contains lots of great software like: 
+	Cmder: a great console emulator for Windows
+	Cygwin: a large collection of GNU and Open Source tools on Windows
+	Mobaxterm: free Xserver and tabbed SSH client for Windows
+	Notepad++: a free source code editor on the MS Windows environment
+	Sublime: a text editor you'll fall in love with
+	Hfs: a simple HTTP File Server to send and receive files
+	Everyehing: a search engine that locates files and folders for Windows
+##### and more...
 
 ##### cmd snapshot
 ![](https://raw.githubusercontent.com/kiddlu/Winix/master/snapshot/img1.png)
@@ -11,11 +18,11 @@ Winix
 ##### zsh snapshot
 ![](https://raw.githubusercontent.com/kiddlu/Winix/master/snapshot/img2.png)
 
-#### To install Winix just download [Winix](http://pan.baidu.com/s/1dDI3SXF), unzip and run install.cmd script.
+#### To install Winix just download [Winix](http://pan.baidu.com/s/1dDI3SXF), unzip and run install.bat script.
 
-#### Default directory is D:\Winix, if you want to change, pls modify install.cmd yourself.
+#### Default directory is D:\Winix, if you want to change, pls modify install.bat yourself.
 
-	Packages Version:
+	Current Packages Version:
 	Cygwin:           2.873
 	Cmder:            1.2.0
 	Python:           2.7.10
