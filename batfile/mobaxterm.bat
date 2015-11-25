@@ -1,0 +1,6 @@
+set MOBAXTERM_ROOT=%WINIXROOT%\MobaXterm
+set MOBAXTERM_EXE=%SCRIPT_PATH%\dist\MobaXterm.exe
+
+mkdir %MOBAXTERM_ROOT%
+copy %MOBAXTERM_EXE% %MOBAXTERM_ROOT%\
+copy %CYGWIN_ROOT%\xcfg\MobaXterm.ini %MOBAXTERM_ROOT%\
