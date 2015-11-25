@@ -21,6 +21,7 @@ Winix
 	Python:           2.7.10
 	MobaXterm:        7.7
 	adbputty:         CN-0.64(No EN version right now)
+	Notepad++:        6.8.8
 	Sublime Text:     2.0.2
 	HTTP File Server  2.3g
 	Everything        1.3.4.686
@@ -28,7 +29,6 @@ Winix
 	MarkdownPad       2.5.0.27920(Require .NET Framework 4 Client Profile)	
 
 #### TODO
-	Notepad++
 	PicPick
 	Linux ramparser
 	MyChrome
