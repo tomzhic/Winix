@@ -37,8 +37,23 @@ Winix
 
 #### TODO
 	PicPick
+	Paint.net
+	Fastcopy
+	DiskGenius
+	Foobar2000
+	GifCam
+	PingHurry
+	Teraterm
+	Putty
+	Vbs To Exe
+	Bat To Exe Converter
+	BeCyIconGrabber
+	AveIcon
 	Linux ramparser
 	MyChrome
+	Rocketdock
+	Xlaunchpad
+	bootice
 	and more...
 
 #### Enjoy!
