@@ -2,7 +2,7 @@ Winix
 ----------
 
 #### The Unix-like Windows Shell & Environment
-	It contains lot's of great software like cmder,cygwin,python,
+	It contains lots of great software like cmder,cygwin,python,
 	mobaxterm,notepad++,everyehing...which make your work more effective
 
 ##### cmd snapshot
