@@ -23,12 +23,12 @@ Winix
 	adbputty:         CN-0.64(No EN version right now)
 	Sublime Text:     2.0.2
 	HTTP File Server  2.3g
+	Everything        1.3.4.686
+	Listary           4.23.1728
+	MarkdownPad       2.5.0.27920(Require .NET Framework 4 Client Profile)	
 
 #### TODO
 	Notepad++
-	MarkdownPad
-	Everything
-	Listary
 	PicPick
 	Linux ramparser
 	MyChrome

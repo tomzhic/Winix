@@ -1,13 +1,28 @@
 @echo on
 
 set install_cygwin=yes
-set install_cmder=yes
-set install_python_win32=yes
-set install_mobaxterm=yes
-set install_adbputty=yes
-set install_sublime_text=yes
-set install_hfs=yes
-set do_final_job=yes
+set install_cmder=ye
+set install_python_win32=ye
+set install_mobaxterm=ye
+set install_adbputty=ye
+set install_sublime_text=ye
+set install_hfs=ye
+set install_everything==ye
+set install_listary==ye
+set install_markdownpad==yes
+set do_final_job=ye
+
+set WINIXROOT=D:\Winix
+set CYGWIN_ROOT=%WINIXROOT%\Cygwin
+set CMDER_ROOT=%WINIXROOT%\Cmder
+set PYTHON_ROOT=%WINIXROOT%\Python
+set MOBAXTERM_ROOT=%WINIXROOT%\MobaXterm
+set ADBPUTTY_ROOT=%WINIXROOT%\Android\adbputty
+set SUBLIME_ROOT=%WINIXROOT%\Sublime
+set HFS_ROOT=%WINIXROOT%\Hfs
+set EVERYTHING_ROOT=%WINIXROOT%\Everything
+set LISTARY_ROOT=%WINIXROOT%\Listary
+set MARKDOWNPAD_ROOT=%WINIXROOT%\MarkdownPad
 
 set SCRIPT_PATH=%~dp0
 set UNZIPPER=%SCRIPT_PATH%\tools\unzip.exe
@@ -19,15 +34,9 @@ set MOBAXTERM_EXE=%SCRIPT_PATH%\dist\MobaXterm.exe
 set ADBPUTTY_ZIP=%SCRIPT_PATH%\dist\adbputty.zip
 set SUBLIME_ZIP=%SCRIPT_PATH%\dist\Sublime Text 2.0.2 x64.zip
 set HFS_EXE=%SCRIPT_PATH%\dist\hfs.exe
-
-set WINIXROOT=D:\Winix
-set CYGWIN_ROOT=%WINIXROOT%\Cygwin
-set CMDER_ROOT=%WINIXROOT%\Cmder
-set PYTHON_ROOT=%WINIXROOT%\Python
-set MOBAXTERM_ROOT=%WINIXROOT%\MobaXterm
-set ADBPUTTY_ROOT=%WINIXROOT%\Android\adbputty
-set SUBLIME_ROOT=%WINIXROOT%\Sublime
-set HFS_ROOT=%WINIXROOT%\Hfs
+set EVERYTHING_ZIP=%SCRIPT_PATH%\dist\Everything-1.3.4.686.x64.Multilingual.zip
+set LISTARY_ZIP=%SCRIPT_PATH%\dist\ListaryPortable.zip
+set MARKDOWNPAD_ZIP=%SCRIPT_PATH%\dist\markdownpad2-portable.zip
 
 rem set WINIXROOT to env
 wmic ENVIRONMENT where "name='WINIXROOT'" delete
@@ -110,9 +119,34 @@ reg add "HKEY_CLASSES_ROOT\Directory\shell\SubLime" /ve /t REG_SZ /d "Edit with 
 reg add "HKEY_CLASSES_ROOT\Directory\shell\SubLime\Command" /ve /t REG_SZ /d "\"%SUBLIME_ROOT%\sublime_text.exe\" \"%%1\"" /f >nul
 
 :HFS
-if not %install_hfs%==yes goto FINAL
+if not %install_hfs%==yes goto EVERYTHING
 mkdir %HFS_ROOT%
 copy %HFS_EXE% %HFS_ROOT%\
+
+:EVERYTHING
+if not %install_everything%==yes goto LISTARY
+mkdir %EVERYTHING_ROOT%
+"%UNZIPPER%" -o "%EVERYTHING_ZIP%" -d "%EVERYTHING_ROOT%"
+copy %CYGWIN_ROOT%\xcfg\Everything.ini %EVERYTHING_ROOT%\
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "Everything" /t REG_SZ /d "\"%EVERYTHING_ROOT%\Everything.exe\" -startup" /f >nul
+
+:LISTARY
+if not %install_listary%==yes goto MARKDOWNPAD
+mkdir %LISTARY_ROOT%
+mkdir %LISTARY_ROOT%\UserData
+"%UNZIPPER%" -o "%LISTARY_ZIP%" -d "%LISTARY_ROOT%"
+xcopy %LISTARY_ROOT%\ListaryPortable %LISTARY_ROOT% /E /Y
+rd /s /q %LISTARY_ROOT%\ListaryPortable
+copy %CYGWIN_ROOT%\xcfg\Listary.Preferences.json %LISTARY_ROOT%\UserData\Preferences.json
+schtasks /delete /tn Listary /f
+schtasks /create /tn Listary /tr %LISTARY_ROOT%\Listary.exe  /sc ONLOGON
+
+:MARKDOWNPAD
+if not %install_markdownpad%==yes goto FINAL
+mkdir %MARKDOWNPAD_ROOT%
+"%UNZIPPER%" -o "%MARKDOWNPAD_ZIP%" -d "%MARKDOWNPAD_ROOT%"
+xcopy %MARKDOWNPAD_ROOT%\markdownpad2-portable %MARKDOWNPAD_ROOT% /E /Y
+rd /s /q %MARKDOWNPAD_ROOT%\markdownpad2-portable
 
 :FINAL
 if not %do_final_job%==yes goto END
