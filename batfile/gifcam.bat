@@ -1,0 +1,5 @@
+set GIFCAM_ROOT=%WINIXROOT%\GifCam
+set GIFCAM_ZIP=%SCRIPT_PATH%\dist\GifCam.zip
+
+mkdir %GIFCAM_ROOT%
+"%UNZIPPER%" -o "%GIFCAM_ZIP%" -d "%GIFCAM_ROOT%"

@@ -28,7 +28,7 @@ Winix
 	Python            2.7.10
 	MobaXterm         7.7
 	adbputty          CN-0.64(No EN version right now)
-	Notepad++         6.8.8
+	Notepad++         6.8.6
 	Sublime Text      2.0.2
 	HTTP File Server  2.3g
 	Everything        1.3.4.686
@@ -37,17 +37,18 @@ Winix
 	Fastcopy          3.09
 	VbsToExe          2.0.5.0
 	BatToExe          2.3.3.0
+	GifCam            5.1
+	BeCyIconGrabber   2.30
+	TeraTerm          4.88 
 
 #### TODO
 	PicPick
 	Paint.net
 	DiskGenius
 	Foobar2000
-	GifCam
 	PingHurry
 	Teraterm
 	Putty
-	BeCyIconGrabber
 	AveIcon
 	Linux ramparser
 	MyChrome
