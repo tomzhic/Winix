@@ -1,0 +1,5 @@
+set VBS2EXE_ROOT=%WINIXROOT%\Vbs2Exe
+set VBS2EXE_ZIP=%SCRIPT_PATH%\dist\Vbs_To_Exe.zip
+
+mkdir %VBS2EXE_ROOT%
+"%UNZIPPER%" -o "%VBS2EXE_ZIP%" -d "%VBS2EXE_ROOT%"
