@@ -26,29 +26,32 @@ Winix
 	Cygwin            2.873
 	Cmder             1.2.0
 	Python            2.7.10
-	MobaXterm         7.7
+	MobaXterm         7.6
 	adbputty          CN-0.64(No EN version right now)
 	Notepad++         6.8.6
 	Sublime Text      2.0.2
 	HTTP File Server  2.3g
 	Everything        1.3.4.686
 	Listary           4.23.1728
-	MarkdownPad       2.5.0.27920(Require .NET Framework 4 Client Profile)	
+	MarkdownPad       2.5.0.27920(Require .NET Framework 4 Client Profile)
+	PSPad             4.6.0
 	Fastcopy          3.09
 	VbsToExe          2.0.5.0
 	BatToExe          2.3.3.0
 	GifCam            5.1
 	BeCyIconGrabber   2.30
 	TeraTerm          4.88 
+	PicPick           4.0.8
+	Foobar2000        1.3.9
+	VLC               2.2.1
+	SMPlayer          15.9.0
+	SumatraPDF        3.1.1
 
 #### TODO
-	PicPick
 	Paint.net
 	DiskGenius
-	Foobar2000
-	PingHurry
-	Teraterm
 	Putty
+	PingHurry
 	AveIcon
 	Linux ramparser
 	MyChrome

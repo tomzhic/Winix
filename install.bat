@@ -1,6 +1,9 @@
 @echo on
 
-rem if you do want to install any package, just rem it
+rem if you do want to install any package, just rem it, link
+::set winix=1
+
+set clean=1
 set cygwin=1
 set cmder=1
 set python=1
@@ -12,13 +15,18 @@ set hfs=1
 set everything==1
 set listary==1
 set markdownpad==1
+set pspad=1
 set fastcopy==1
 set vbs2exe=1
 set bat2exe=1
 set gitcam=1
 set becyicongrabber=1
 set teraterm=1
-set clean=1
+set picpick=1
+set foobar2000=1
+set vlc=1
+set smplayer=1
+set sumatrapdf=1
 
 set WINIXROOT=D:\Winix
 
@@ -53,6 +61,8 @@ if defined listary call %SCRIPT_PATH%\batfile\listary.bat
 
 if defined markdownpad call %SCRIPT_PATH%\batfile\markdownpad.bat
 
+if defined pspad call %SCRIPT_PATH%\batfile\pspad.bat
+
 if defined fastcopy call %SCRIPT_PATH%\batfile\fastcopy.bat
 
 if defined vbs2exe call %SCRIPT_PATH%\batfile\vbs2exe.bat
@@ -64,6 +74,16 @@ if defined gitcam call %SCRIPT_PATH%\batfile\gifcam.bat
 if defined becyicongrabber call %SCRIPT_PATH%\batfile\becyicongrabber.bat
 
 if defined teraterm call %SCRIPT_PATH%\batfile\teraterm.bat
+
+if defined picpick call %SCRIPT_PATH%\batfile\picpick.bat
+
+if defined foobar2000 call %SCRIPT_PATH%\batfile\foobar2000.bat
+
+if defined vlc call %SCRIPT_PATH%\batfile\vlc.bat
+
+if defined smplayer call %SCRIPT_PATH%\batfile\smplayer.bat
+
+if defined sumatrapdf call %SCRIPT_PATH%\batfile\sumatrapdf.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot
