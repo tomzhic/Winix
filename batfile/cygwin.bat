@@ -23,6 +23,8 @@ rem hello-cygwin
 %CYGWIN_ROOT%\bin\bash -l -c "git clone https://github.com/kiddlu/hello-cygwin.git /xbin"
 %CYGWIN_ROOT%\bin\bash -l -c "chmod +x /xbin/* 1> /dev/null 2> /dev/null"
 
+%CYGWIN_ROOT%\bin\bash -l -c "ln -s %WINIXROOT% /winix"
+
 rem assoc
 assoc .sh=Shell.File
 ftype Shell.File="%CYGWIN_ROOT%\bin\bash.exe" "%%1" %%*
