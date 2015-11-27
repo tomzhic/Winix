@@ -1,0 +1,57 @@
+[1mdiff --git a/batfile/cygwin.bat b/batfile/cygwin.bat[m
+[1mindex 9c1a430..78768de 100644[m
+[1m--- a/batfile/cygwin.bat[m
+[1m+++ b/batfile/cygwin.bat[m
+[36m@@ -17,6 +17,7 @@[m [mrem oh-my-config[m
+ %CYGWIN_ROOT%\bin\bash -l -c "git clone https://github.com/kiddlu/oh-my-config.git /xcfg"[m
+ %CYGWIN_ROOT%\bin\bash -l -c "\\cp /xcfg/.* ~/ > /dev/null 2>&1"[m
+ %CYGWIN_ROOT%\bin\bash -l -c "\\cp -rf /xcfg/.config/ ~/ > /dev/null 2>&1"[m
+[32m+[m[32m%CYGWIN_ROOT%\bin\bash -l -c "\\cp -rf /xcfg/Cygwin.etc.fstab /etc/fstab > /dev/null 2>&1"[m[41m[m
+ [m
+ rem hello-cygwin[m
+ %CYGWIN_ROOT%\bin\bash -l -c "git clone https://github.com/kiddlu/hello-cygwin.git /xbin"[m
+[36m@@ -27,5 +28,13 @@[m [massoc .sh=Shell.File[m
+ ftype Shell.File="%CYGWIN_ROOT%\bin\bash.exe" "%%1" %%*[m
+ reg add "HKEY_CLASSES_ROOT\Shell.File\DefaultIcon" /ve /t REG_SZ /d "%CYGWIN_ROOT%\Cygwin-Terminal.ico,0" /f >nul[m
+ [m
+[32m+[m[32massoc .py=Python.File[m[41m[m
+[32m+[m[32mftype Python.File="%CYGWIN_ROOT%\bin\python2.7.exe" "%%1" %%*[m[41m[m
+[32m+[m[32mreg add "HKEY_CLASSES_ROOT\Python.File\DefaultIcon" /ve /t REG_SZ /d "%CYGWIN_ROOT%\Cygwin-Terminal.ico,0" /f >nul[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32massoc .pl=Perl.File[m[41m[m
+[32m+[m[32mftype Perl.File="%CYGWIN_ROOT%\bin\perl.exe" "%%1" %%*[m[41m[m
+[32m+[m[32mreg add "HKEY_CLASSES_ROOT\Perl.File\DefaultIcon" /ve /t REG_SZ /d "%CYGWIN_ROOT%\Cygwin-Terminal.ico,0" /f >nul[m[41m[m
+[32m+[m[41m[m
+ rem wget setup-x86_64.exe[m
+ copy %CYGWIN_SETUP% %CYGWIN_ROOT%\[m
+\ No newline at end of file[m
+[1mdiff --git a/install.bat b/install.bat[m
+[1mindex ca4cf63..4dd5e30 100644[m
+[1m--- a/install.bat[m
+[1m+++ b/install.bat[m
+[36m@@ -1,12 +1,12 @@[m
+ @echo on[m
+ [m
+[31m-rem if you do want to install any package, just rem it, link[m
+[31m-::set winix=1[m
+[32m+[m[32mrem if you do want to install any package, just rem it, like[m[41m[m
+[32m+[m[41m[m
+[32m+[m[32m::do not install win32 python by default[m[41m [m
+[32m+[m[32m::set python=1[m[41m[m
+ [m
+[31m-set clean=1[m
+ set cygwin=1[m
+ set cmder=1[m
+[31m-set python=1[m
+ set mobaxterm=1[m
+ set adbputty=1[m
+ set notepadpp=1[m
+[36m@@ -28,6 +28,8 @@[m [mset vlc=1[m
+ set smplayer=1[m
+ set sumatrapdf=1[m
+ [m
+[32m+[m[32mset clean=1[m[41m[m
+[32m+[m[41m[m
+ set WINIXROOT=D:\Winix[m
+ [m
+ set SCRIPT_PATH=%~dp0[m

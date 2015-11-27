@@ -17,6 +17,7 @@ rem oh-my-config
 %CYGWIN_ROOT%\bin\bash -l -c "git clone https://github.com/kiddlu/oh-my-config.git /xcfg"
 %CYGWIN_ROOT%\bin\bash -l -c "\\cp /xcfg/.* ~/ > /dev/null 2>&1"
 %CYGWIN_ROOT%\bin\bash -l -c "\\cp -rf /xcfg/.config/ ~/ > /dev/null 2>&1"
+%CYGWIN_ROOT%\bin\bash -l -c "\\cp -rf /xcfg/Cygwin.etc.fstab /etc/fstab > /dev/null 2>&1"
 
 rem hello-cygwin
 %CYGWIN_ROOT%\bin\bash -l -c "git clone https://github.com/kiddlu/hello-cygwin.git /xbin"
@@ -26,6 +27,14 @@ rem assoc
 assoc .sh=Shell.File
 ftype Shell.File="%CYGWIN_ROOT%\bin\bash.exe" "%%1" %%*
 reg add "HKEY_CLASSES_ROOT\Shell.File\DefaultIcon" /ve /t REG_SZ /d "%CYGWIN_ROOT%\Cygwin-Terminal.ico,0" /f >nul
+
+assoc .py=Python.File
+ftype Python.File="%CYGWIN_ROOT%\bin\python2.7.exe" "%%1" %%*
+reg add "HKEY_CLASSES_ROOT\Python.File\DefaultIcon" /ve /t REG_SZ /d "%CYGWIN_ROOT%\Cygwin-Terminal.ico,0" /f >nul
+
+assoc .pl=Perl.File
+ftype Perl.File="%CYGWIN_ROOT%\bin\perl.exe" "%%1" %%*
+reg add "HKEY_CLASSES_ROOT\Perl.File\DefaultIcon" /ve /t REG_SZ /d "%CYGWIN_ROOT%\Cygwin-Terminal.ico,0" /f >nul
 
 rem wget setup-x86_64.exe
 copy %CYGWIN_SETUP% %CYGWIN_ROOT%\

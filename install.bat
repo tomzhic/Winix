@@ -1,12 +1,12 @@
 @echo on
 
-rem if you do want to install any package, just rem it, link
-::set winix=1
+rem if you do want to install any package, just rem it, like
 
-set clean=1
+::do not install win32 python by default 
+::set python=1
+
 set cygwin=1
 set cmder=1
-set python=1
 set mobaxterm=1
 set adbputty=1
 set notepadpp=1
@@ -27,6 +27,8 @@ set foobar2000=1
 set vlc=1
 set smplayer=1
 set sumatrapdf=1
+
+set clean=1
 
 set WINIXROOT=D:\Winix
 
