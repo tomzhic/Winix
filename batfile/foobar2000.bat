@@ -1,4 +1,8 @@
 set FOOBAR_ROOT=%WINIXROOT%\Foobar2000
-set FOOBAR_EXE=%SCRIPT_PATH%\dist\foobar2000_v1.3.9.exe
+set FOOBAR_ZIP=%SCRIPT_PATH%\dist\foobar2000.zip
 
-%FOOBAR_EXE% /S /D=%FOOBAR_ROOT%
+mkdir %FOOBAR_ROOT%
+"%UNZIPPER%" -o "%FOOBAR_ZIP%" -d "%FOOBAR_ROOT%"
+
+::set FOOBAR_EXE=%SCRIPT_PATH%\dist\foobar2000_v1.3.9.exe
+:::%FOOBAR_EXE% /S /D=%FOOBAR_ROOT%
