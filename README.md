@@ -46,6 +46,8 @@ Winix
 	VLC               2.2.1
 	SMPlayer          15.9.0
 	SumatraPDF        3.1.1
+	FileZilla         3.14.1
+	LinuxReader       2.3
 
 #### TODO
 	Paint.net
