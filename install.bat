@@ -51,9 +51,9 @@ if defined python call %SCRIPT_PATH%\batfile\python.bat
 
 if defined mobaxterm call %SCRIPT_PATH%\batfile\mobaxterm.bat
 
-if defined install_adbputty call %SCRIPT_PATH%\batfile\adbputty.bat
+if defined adbputty call %SCRIPT_PATH%\batfile\adbputty.bat
 
-if defined install_notepadpp call %SCRIPT_PATH%\batfile\notepadpp.bat
+if defined notepadpp call %SCRIPT_PATH%\batfile\notepadpp.bat
 
 if defined sublime call %SCRIPT_PATH%\batfile\sublime.bat
 
