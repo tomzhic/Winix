@@ -52,6 +52,7 @@ Winix
 	FileZilla         3.14.1
 	LinuxReader       2.3
 	XLaunchPad        1.0.9.518
+	CCleaner          5.12.5413
 
 #### TODO
 	Paint.net
