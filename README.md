@@ -12,13 +12,16 @@ Winix
 	Everyehing: a search engine that locates files and folders for Windows
 ##### and more...
 
-##### cmd snapshot
+##### cmd
 ![](https://raw.githubusercontent.com/kiddlu/Winix/master/snapshot/img1.png)
 
-##### zsh snapshot
+##### zsh
 ![](https://raw.githubusercontent.com/kiddlu/Winix/master/snapshot/img2.png)
 
-#### To install Winix just download [Winix](http://pan.baidu.com/s/1dDI3SXF), unzip and run install.bat script.
+##### launch & dock
+![](https://raw.githubusercontent.com/kiddlu/Winix/master/snapshot/img3.png)
+
+#### To install Winix just download [Winix](http://pan.baidu.com/s/1dDI3SXF), unzip and run install.bat as Administrator.
 
 #### Default directory is D:\Winix, if you want to change, pls modify install.bat yourself.
 
