@@ -32,10 +32,11 @@ set linuxreader=1
 set xlaunchpad=1
 set ccleaner=1
 set rocketdock=1
+set 7zip=1
 
 set clean=1
 
-set WINIXROOT=D:\Winix
+set WINIXROOT=D:\MyWinix
 
 set SCRIPT_PATH=%~dp0
 set UNZIPPER=%SCRIPT_PATH%\tools\unzip.exe
@@ -101,6 +102,8 @@ if defined xlaunchpad call %SCRIPT_PATH%\batfile\xlaunchpad.bat
 if defined ccleaner call %SCRIPT_PATH%\batfile\ccleaner.bat
 
 if defined rocketdock call %SCRIPT_PATH%\batfile\rocketdock.bat
+
+if defined 7zip call %SCRIPT_PATH%\batfile\7zip.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot
