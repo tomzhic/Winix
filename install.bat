@@ -31,6 +31,7 @@ set filezilla=1
 set linuxreader=1
 set xlaunchpad=1
 set ccleaner=1
+set rocketdock=1
 
 set clean=1
 
@@ -98,6 +99,8 @@ if defined linuxreader call %SCRIPT_PATH%\batfile\linuxreader.bat
 if defined xlaunchpad call %SCRIPT_PATH%\batfile\xlaunchpad.bat
 
 if defined ccleaner call %SCRIPT_PATH%\batfile\ccleaner.bat
+
+if defined rocketdock call %SCRIPT_PATH%\batfile\rocketdock.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot
