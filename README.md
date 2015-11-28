@@ -48,6 +48,7 @@ Winix
 	SumatraPDF        3.1.1
 	FileZilla         3.14.1
 	LinuxReader       2.3
+	XLaunchPad        1.0.9.518
 
 #### TODO
 	Paint.net
@@ -58,7 +59,6 @@ Winix
 	Linux ramparser
 	MyChrome
 	Rocketdock
-	Xlaunchpad
 	bootice
 	and more...
 

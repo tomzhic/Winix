@@ -29,6 +29,7 @@ set smplayer=1
 set sumatrapdf=1
 set filezilla=1
 set linuxreader=1
+set xlaunchpad=1
 
 set clean=1
 
@@ -92,6 +93,8 @@ if defined sumatrapdf call %SCRIPT_PATH%\batfile\sumatrapdf.bat
 if defined filezilla call %SCRIPT_PATH%\batfile\filezilla.bat
 
 if defined linuxreader call %SCRIPT_PATH%\batfile\linuxreader.bat
+
+if defined xlaunchpad call %SCRIPT_PATH%\batfile\xlaunchpad.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot
