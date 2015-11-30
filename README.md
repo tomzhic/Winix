@@ -56,6 +56,7 @@ Winix
 	Rocketdock        1.3.5
 	7-Zip             15.12
 	XnView            2.34
+	DiskGenius        4.7.2.155
 
 #### TODO
 	Paint.net
