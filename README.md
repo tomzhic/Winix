@@ -53,6 +53,9 @@ Winix
 	LinuxReader       2.3
 	XLaunchPad        1.0.9.518
 	CCleaner          5.12.5413
+	Rocketdock        1.3.5
+	7-Zip             15.12
+	XnView            2.34
 
 #### TODO
 	Paint.net
@@ -62,7 +65,6 @@ Winix
 	AveIcon
 	Linux ramparser
 	MyChrome
-	Rocketdock
 	bootice
 	and more...
 

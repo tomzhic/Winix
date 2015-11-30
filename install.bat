@@ -33,6 +33,7 @@ set xlaunchpad=1
 set ccleaner=1
 set rocketdock=1
 set 7zip=1
+set xnview=1
 
 set clean=1
 
@@ -104,6 +105,8 @@ if defined ccleaner call %SCRIPT_PATH%\batfile\ccleaner.bat
 if defined rocketdock call %SCRIPT_PATH%\batfile\rocketdock.bat
 
 if defined 7zip call %SCRIPT_PATH%\batfile\7zip.bat
+
+if defined xnview call %SCRIPT_PATH%\batfile\xnview.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot
