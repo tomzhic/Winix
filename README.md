@@ -1,7 +1,8 @@
 Winix
 ----------
 
-#### An excellent Windows environment which makes your work more effective.
+#### An excellent Windows environment which makes your work more effective and your life more buteaful
+
 ##### It contains lots of great software like: 
 	Cmder: a great console emulator for Windows
 	Cygwin: a large collection of GNU and Open Source tools on Windows
@@ -10,6 +11,7 @@ Winix
 	Sublime: a text editor you'll fall in love with
 	Hfs: a simple HTTP File Server to send and receive files
 	Everyehing: a search engine that locates files and folders for Windows
+
 ##### and more...
 
 ##### cmd
@@ -57,10 +59,12 @@ Winix
 	7-Zip             15.12
 	XnView            2.34
 	DiskGenius        4.7.2.155
+	FileTypesMan      1.8
+	ProduKey          1.8.1
+	Speccy            1.28.709
 
 #### TODO
 	Paint.net
-	DiskGenius
 	Putty
 	PingHurry
 	AveIcon

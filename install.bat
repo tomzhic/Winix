@@ -35,6 +35,9 @@ set rocketdock=1
 set 7zip=1
 set xnview=1
 set diskgenius=1
+set filetypesman=1
+set produkey=1
+set speccy=1
 
 set clean=1
 
@@ -110,6 +113,12 @@ if defined 7zip call %SCRIPT_PATH%\batfile\7zip.bat
 if defined xnview call %SCRIPT_PATH%\batfile\xnview.bat
 
 if defined diskgenius call %SCRIPT_PATH%\batfile\diskgenius.bat
+
+if defined filetypesman call %SCRIPT_PATH%\batfile\filetypesman.bat
+
+if defined produkey call %SCRIPT_PATH%\batfile\produkey.bat
+
+if defined speccy call %SCRIPT_PATH%\batfile\speccy.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot
