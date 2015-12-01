@@ -62,6 +62,7 @@ Winix
 	FileTypesMan      1.8
 	ProduKey          1.8.1
 	Speccy            1.28.709
+	Dexpot            1.6.14
 
 #### TODO
 	Paint.net

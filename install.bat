@@ -38,6 +38,7 @@ set diskgenius=1
 set filetypesman=1
 set produkey=1
 set speccy=1
+set dexpot=1
 
 set clean=1
 
@@ -119,6 +120,8 @@ if defined filetypesman call %SCRIPT_PATH%\batfile\filetypesman.bat
 if defined produkey call %SCRIPT_PATH%\batfile\produkey.bat
 
 if defined speccy call %SCRIPT_PATH%\batfile\speccy.bat
+
+if defined dexpot call %SCRIPT_PATH%\batfile\dexpot.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot
