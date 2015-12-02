@@ -42,6 +42,7 @@ set dexpot=1
 set aeroenabler=1
 set systemfontsreplacer=1
 set fossamail=1
+set winscp=1
 
 set clean=1
 
@@ -131,6 +132,8 @@ if defined aeroenabler call %SCRIPT_PATH%\batfile\aeroenabler.bat
 if defined systemfontsreplacer call %SCRIPT_PATH%\batfile\systemfontsreplacer.bat
 
 if defined fossamail call %SCRIPT_PATH%\batfile\fossamail.bat
+
+if defined winscp call %SCRIPT_PATH%\batfile\winscp.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot
