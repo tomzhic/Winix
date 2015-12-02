@@ -68,11 +68,11 @@ Winix
 	FossaMail         25.1.9
 	WinSCP            5.7.6
 	PingHurry         1.1.0.0
+	Kitty             0.66.6.1p
 
 #### TODO
 	Paint.net
 	LibreOffice
-	Putty
 	Linux ramparser
 	MyChrome
 	bootice
