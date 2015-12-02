@@ -63,6 +63,9 @@ Winix
 	ProduKey          1.8.1
 	Speccy            1.28.709
 	Dexpot            1.6.14
+	AeroEnabler       1.0.0.4
+	FontsReplacer     1.6.0.2
+	FossaMail         25.1.9
 
 #### TODO
 	Paint.net

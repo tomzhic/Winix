@@ -39,6 +39,9 @@ set filetypesman=1
 set produkey=1
 set speccy=1
 set dexpot=1
+set aeroenabler=1
+set systemfontsreplacer=1
+set fossamail=1
 
 set clean=1
 
@@ -122,6 +125,12 @@ if defined produkey call %SCRIPT_PATH%\batfile\produkey.bat
 if defined speccy call %SCRIPT_PATH%\batfile\speccy.bat
 
 if defined dexpot call %SCRIPT_PATH%\batfile\dexpot.bat
+
+if defined aeroenabler call %SCRIPT_PATH%\batfile\aeroenabler.bat
+
+if defined systemfontsreplacer call %SCRIPT_PATH%\batfile\systemfontsreplacer.bat
+
+if defined fossamail call %SCRIPT_PATH%\batfile\fossamail.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot
