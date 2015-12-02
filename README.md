@@ -66,12 +66,13 @@ Winix
 	AeroEnabler       1.0.0.4
 	FontsReplacer     1.6.0.2
 	FossaMail         25.1.9
+	WinSCP            5.7.6
+	PingHurry         1.1.0.0
 
 #### TODO
 	Paint.net
+	LibreOffice
 	Putty
-	PingHurry
-	AveIcon
 	Linux ramparser
 	MyChrome
 	bootice

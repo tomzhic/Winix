@@ -43,6 +43,7 @@ set aeroenabler=1
 set systemfontsreplacer=1
 set fossamail=1
 set winscp=1
+set pinghurry=1
 
 set clean=1
 
@@ -134,6 +135,8 @@ if defined systemfontsreplacer call %SCRIPT_PATH%\batfile\systemfontsreplacer.ba
 if defined fossamail call %SCRIPT_PATH%\batfile\fossamail.bat
 
 if defined winscp call %SCRIPT_PATH%\batfile\winscp.bat
+
+if defined pinghurry call %SCRIPT_PATH%\batfile\pinghurry.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot
