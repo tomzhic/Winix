@@ -69,6 +69,7 @@ Winix
 	WinSCP            5.7.6
 	PingHurry         1.1.0.0
 	Kitty             0.66.6.1p
+	MacType           1.2013.1231.0
 
 #### TODO
 	Paint.net

@@ -45,6 +45,7 @@ set fossamail=1
 set winscp=1
 set pinghurry=1
 set kitty=1
+set mactype=1
 
 set clean=1
 
@@ -140,6 +141,8 @@ if defined winscp call %SCRIPT_PATH%\batfile\winscp.bat
 if defined pinghurry call %SCRIPT_PATH%\batfile\pinghurry.bat
 
 if defined kitty call %SCRIPT_PATH%\batfile\kitty.bat
+
+if defined mactype call %SCRIPT_PATH%\batfile\mactype.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot
