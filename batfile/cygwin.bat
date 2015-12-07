@@ -2,7 +2,7 @@ set CYGWIN_ROOT=%WINIXROOT%\Cygwin
 set CYGWIN_SETUP=%SCRIPT_PATH%\dist\setup-x86_64.exe
 set CYGWIN_MIRROR=http://mirrors.163.com/cygwin
 
-%CYGWIN_SETUP% -q -g -s "%CYGWIN_MIRROR%" -R "%CYGWIN_ROOT%" -l "%CYGWIN_ROOT%\dist" ^
+%CYGWIN_SETUP% -q -g -n -s "%CYGWIN_MIRROR%" -R "%CYGWIN_ROOT%" -l "%CYGWIN_ROOT%\dist" ^
 -P git -P wget -P curl -P vim -P zsh -P gitk -P shutdown -P xorg-server -P oxygen-fonts ^
 -P dos2unix -P procps -P psmisc -P patch -P sqlite3 -P tmux -P tree -P iperf -P cpio
 
