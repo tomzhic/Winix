@@ -32,7 +32,7 @@ Winix
 	Cmder             1.2.0
 	Python            2.7.10
 	MobaXterm         7.6
-	adbputty          CN-0.64(No EN version right now)
+	adbputty          EN-0.66
 	Notepad++         6.8.6
 	Sublime Text      2.0.2
 	HTTP File Server  2.3g
