@@ -77,6 +77,10 @@ Winix
 	LibreOffice
 	MyChrome
 	bootice
+	Wireshark
+	AveIcon
+	Ditto
+	YzShadow
 	and more...
 
 #### Enjoy!
