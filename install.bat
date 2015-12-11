@@ -47,6 +47,8 @@ set winscp=1
 set pinghurry=1
 set kitty=1
 set mactype=1
+set fotosketcher=1
+set spacsniffer=1
 
 set clean=1
 
@@ -146,6 +148,10 @@ if defined pinghurry call %SCRIPT_PATH%\batfile\pinghurry.bat
 if defined kitty call %SCRIPT_PATH%\batfile\kitty.bat
 
 if defined mactype call %SCRIPT_PATH%\batfile\mactype.bat
+
+if defined fotosketcher call %SCRIPT_PATH%\batfile\fotosketcher.bat
+
+if defined spacesniffer call %SCRIPT_PATH%\batfile\spacesniffer.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot

@@ -71,6 +71,8 @@ Winix
 	PingHurry         1.1.0.0
 	Kitty             0.66.6.1p
 	MacType           1.2013.1231.0
+	FotoSketcher      3.20
+	SpaceSniffer      1.2.0.2
 
 #### TODO
 	Paint.net
