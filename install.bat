@@ -5,52 +5,57 @@ rem if you do want to install any package, just rem it, like
 ::do not install win32 python by default 
 ::set python=1
 
-set cygwin=1
-set cmder=1
-set mobaxterm=1
-set adbputty=1
-set ramparser=1
-set notepadpp=1
-set sublime=1
-set hfs=1
-set everything==1
-set listary==1
-set markdownpad==1
-set pspad=1
-set fastcopy==1
-set vbs2exe=1
-set bat2exe=1
-set gitcam=1
-set becyicongrabber=1
-set teraterm=1
-set picpick=1
-set foobar2000=1
-set vlc=1
-set smplayer=1
-set sumatrapdf=1
-set filezilla=1
-set linuxreader=1
-set xlaunchpad=1
-set ccleaner=1
-set rocketdock=1
-set 7zip=1
-set xnview=1
-set diskgenius=1
-set filetypesman=1
-set produkey=1
-set speccy=1
-set dexpot=1
-set aeroenabler=1
-set systemfontsreplacer=1
-set fossamail=1
-set winscp=1
-set pinghurry=1
-set kitty=1
-set mactype=1
-set fotosketcher=1
-set spacsniffer=1
+::set cygwin=1
+::set cmder=1
+::set mobaxterm=1
+::set adbputty=1
+::set ramparser=1
+::set notepadpp=1
+::set sublime=1
+::set hfs=1
+::set everything==1
+::set listary==1
+::set markdownpad==1
+::set pspad=1
+::set fastcopy==1
+::set vbs2exe=1
+::set bat2exe=1
+::set gitcam=1
+::set becyicongrabber=1
+::set teraterm=1
+::set picpick=1
+::set foobar2000=1
+::set vlc=1
+::set smplayer=1
+::set sumatrapdf=1
+::set filezilla=1
+::set linuxreader=1
+::set xlaunchpad=1
+::set ccleaner=1
+::set rocketdock=1
+::set 7zip=1
+::set xnview=1
+::set diskgenius=1
+::set filetypesman=1
+::set produkey=1
+::set speccy=1
+::set dexpot=1
+::set aeroenabler=1
+::set systemfontsreplacer=1
+::set fossamail=1
+::set winscp=1
+::set pinghurry=1
+::set kitty=1
+::set mactype=1
+::set fotosketcher=1
+::set spacsniffer=1
+::set freecommander=1
+::set winmerge=1
+::
+::set clean=1
 
-set clean=1
+set freecommander=1
+set winmerge=1
 
 set WINIXROOT=D:\MyWinix
 
@@ -152,6 +157,10 @@ if defined mactype call %SCRIPT_PATH%\batfile\mactype.bat
 if defined fotosketcher call %SCRIPT_PATH%\batfile\fotosketcher.bat
 
 if defined spacesniffer call %SCRIPT_PATH%\batfile\spacesniffer.bat
+
+if defined freecommander call %SCRIPT_PATH%\batfile\freecommander.bat
+
+if defined winmerge call %SCRIPT_PATH%\batfile\winmerge.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot
