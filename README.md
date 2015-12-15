@@ -73,6 +73,8 @@ Winix
 	MacType           1.2013.1231.0
 	FotoSketcher      3.20
 	SpaceSniffer      1.2.0.2
+	FreeCommander     2015 Build 700
+	WinMerge          2.14.0.0
 
 #### TODO
 	Paint.net
