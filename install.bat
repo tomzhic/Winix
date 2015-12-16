@@ -48,13 +48,13 @@ set pinghurry=1
 set kitty=1
 set mactype=1
 set fotosketcher=1
-set spacsniffer=1
+set spacesniffer=1
 set freecommander=1
 set winmerge=1
 
 set clean=1
 
-set WINIXROOT=D:\Winix
+set WINIXROOT=D:\MyWinix
 
 set SCRIPT_PATH=%~dp0
 set UNZIPPER=%SCRIPT_PATH%\tools\unzip.exe
