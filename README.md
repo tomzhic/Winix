@@ -75,10 +75,10 @@ Winix
 	SpaceSniffer      1.2.0.2
 	FreeCommander     2015 Build 700
 	WinMerge          2.14.0.0
+	LibreOffice       5.0.3.2
 
 #### TODO
 	Paint.net
-	LibreOffice
 	MyChrome
 	bootice
 	Wireshark

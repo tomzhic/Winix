@@ -51,9 +51,11 @@ set fotosketcher=1
 set spacesniffer=1
 set freecommander=1
 set winmerge=1
+set libreoffice=1
 
 set clean=1
 
+rem ===============================================================================
 set WINIXROOT=D:\MyWinix
 
 set SCRIPT_PATH=%~dp0
@@ -158,6 +160,8 @@ if defined spacesniffer call %SCRIPT_PATH%\batfile\spacesniffer.bat
 if defined freecommander call %SCRIPT_PATH%\batfile\freecommander.bat
 
 if defined winmerge call %SCRIPT_PATH%\batfile\winmerge.bat
+
+if defined libreoffice call %SCRIPT_PATH%\batfile\libreoffice.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot
