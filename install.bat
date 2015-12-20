@@ -52,6 +52,7 @@ set spacesniffer=1
 set freecommander=1
 set winmerge=1
 set libreoffice=1
+set meld=1
 
 set clean=1
 
@@ -162,6 +163,8 @@ if defined freecommander call %SCRIPT_PATH%\batfile\freecommander.bat
 if defined winmerge call %SCRIPT_PATH%\batfile\winmerge.bat
 
 if defined libreoffice call %SCRIPT_PATH%\batfile\libreoffice.bat
+
+if defined meld call %SCRIPT_PATH%\batfile\meld.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot

@@ -76,6 +76,7 @@ Winix
 	FreeCommander     2015 Build 700
 	WinMerge          2.14.0.0
 	LibreOffice       5.0.3.2
+	Meld              3.14.2
 
 #### TODO
 	Paint.net
