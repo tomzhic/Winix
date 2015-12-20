@@ -53,6 +53,7 @@ set freecommander=1
 set winmerge=1
 set libreoffice=1
 set meld=1
+set filelocator=1
 
 set clean=1
 
@@ -165,6 +166,8 @@ if defined winmerge call %SCRIPT_PATH%\batfile\winmerge.bat
 if defined libreoffice call %SCRIPT_PATH%\batfile\libreoffice.bat
 
 if defined meld call %SCRIPT_PATH%\batfile\meld.bat
+
+if defined filelocator call %SCRIPT_PATH%\batfile\filelocator.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot
