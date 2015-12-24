@@ -78,6 +78,7 @@ Winix
 	LibreOffice       5.0.3.2
 	Meld              3.14.2
 	FileLocatorLite   Build 828
+	QWinFF            0.2.1
 
 #### TODO
 	Paint.net
