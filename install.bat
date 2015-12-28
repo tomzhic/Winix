@@ -55,6 +55,8 @@ set libreoffice=1
 set meld=1
 set filelocator=1
 set qwinff=1
+set ditto=1
+set autohotkey=1
 
 set clean=1
 
@@ -171,6 +173,10 @@ if defined meld call %SCRIPT_PATH%\batfile\meld.bat
 if defined filelocator call %SCRIPT_PATH%\batfile\filelocator.bat
 
 if defined qwinff call %SCRIPT_PATH%\batfile\qwinff.bat
+
+if defined ditto call %SCRIPT_PATH%\batfile\ditto.bat
+
+if defined autohotkey call %SCRIPT_PATH%\batfile\autohotkey.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot

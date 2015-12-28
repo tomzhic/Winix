@@ -79,6 +79,8 @@ Winix
 	Meld              3.14.2
 	FileLocatorLite   Build 828
 	QWinFF            0.2.1
+	Ditto             3.21.30
+	AutoHotkey        1.1.22.09
 
 #### TODO
 	Paint.net
