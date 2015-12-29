@@ -4,6 +4,7 @@ set CMDER_ZIP=%SCRIPT_PATH%\dist\cmder_mini.zip
 mkdir %CMDER_ROOT%
 "%UNZIPPER%" -o "%CMDER_ZIP%" -d "%CMDER_ROOT%"
 copy %CYGWIN_ROOT%\xcfg\Cmder.init.bat %CMDER_ROOT%\
+copy %CYGWIN_ROOT%\xcfg\Cmder.aliases.rc %CMDER_ROOT%\
 copy %CYGWIN_ROOT%\xcfg\ConEmu.xml %CMDER_ROOT%\config\
 copy %CYGWIN_ROOT%\xcfg\cmder.lua %CMDER_ROOT%\config\
 
