@@ -180,7 +180,7 @@ if defined autohotkey call %SCRIPT_PATH%\batfile\autohotkey.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot
-%CYGWIN_ROOT%\bin\bash -l -c "rm -rf /xcfg"
+rem %CYGWIN_ROOT%\bin\bash -l -c "rm -rf /xcfg"
 %CYGWIN_ROOT%\bin\bash -l -c "rm -rf /dist"
 %CYGWIN_ROOT%\bin\bash -i -c "sleep 3"
 %CYGWIN_ROOT%\bin\bash -i -c "reboot"
