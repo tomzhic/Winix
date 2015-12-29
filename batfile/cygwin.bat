@@ -20,7 +20,7 @@ rem oh-my-config
 %CYGWIN_ROOT%\bin\bash -l -c "\\cp -rf /xcfg/Cygwin.etc.fstab /etc/fstab > /dev/null 2>&1"
 
 rem hello-cygwin
-%CYGWIN_ROOT%\bin\bash -l -c "git clone https://github.com/kiddlu/hello-cygwin.git /xbin"
+%CYGWIN_ROOT%\bin\bash -l -c "git clone https://github.com/kiddlu/oh-my-tools.git /xbin"
 %CYGWIN_ROOT%\bin\bash -l -c "chmod +x /xbin/* 1> /dev/null 2> /dev/null"
 
 %CYGWIN_ROOT%\bin\bash -l -c "ln -s %WINIXROOT% /winix"
