@@ -23,7 +23,8 @@ Winix
 ##### launch & dock
 ![](https://raw.githubusercontent.com/kiddlu/Winix/master/snapshot/img3.png)
 
-#### To install Winix just download [Winix](http://pan.baidu.com/s/1dDI3SXF), unzip and run install.bat as Administrator.
+#### To install Winix just download [Winix](http://1drv.ms/1RJ2a4c), unzip and run install.bat as Administrator.
+	http://1drv.ms/1RJ2a4c
 
 #### Default directory is D:\Winix, if you want to change, pls modify install.bat yourself.
 
