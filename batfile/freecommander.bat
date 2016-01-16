@@ -5,9 +5,9 @@ mkdir %FreeCommander_ROOT%
 "%UNZIPPER%" -o "%FreeCommander_ZIP%" -d "%FreeCommander_ROOT%"
 
 mkdir %FreeCommander_ROOT%\SETTINGS
-copy %CYGWIN_ROOT%\xcfg\FreeCommander.fav.ini %FreeCommander_ROOT%\SETTINGS\FreeCommander.fav.ini
-copy %CYGWIN_ROOT%\xcfg\FreeCommander.ini %FreeCommander_ROOT%\SETTINGS\FreeCommander.ini
-copy %CYGWIN_ROOT%\xcfg\FreeCommander.shc %FreeCommander_ROOT%\SETTINGS\FreeCommander.shc
+copy %CYGWIN_ROOT%\xcfg\windows\FreeCommander.fav.ini %FreeCommander_ROOT%\SETTINGS\FreeCommander.fav.ini
+copy %CYGWIN_ROOT%\xcfg\windows\FreeCommander.ini %FreeCommander_ROOT%\SETTINGS\FreeCommander.ini
+copy %CYGWIN_ROOT%\xcfg\windows\FreeCommander.shc %FreeCommander_ROOT%\SETTINGS\FreeCommander.shc
 
 
 reg add "HKEY_CLASSES_ROOT\Directory\Background\shell\FreeCommander" /ve /t REG_SZ /d "FreeCommander" /f >nul

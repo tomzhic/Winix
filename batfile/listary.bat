@@ -6,6 +6,6 @@ mkdir %LISTARY_ROOT%\UserData
 "%UNZIPPER%" -o "%LISTARY_ZIP%" -d "%LISTARY_ROOT%"
 xcopy %LISTARY_ROOT%\ListaryPortable %LISTARY_ROOT% /e /y /c
 rd /s /q %LISTARY_ROOT%\ListaryPortable
-copy %CYGWIN_ROOT%\xcfg\Listary.Preferences.json %LISTARY_ROOT%\UserData\Preferences.json
+copy %CYGWIN_ROOT%\xcfg\windows\Listary.Preferences.json %LISTARY_ROOT%\UserData\Preferences.json
 schtasks /delete /tn Listary /f
 schtasks /create /tn Listary /tr %LISTARY_ROOT%\Listary.exe  /sc ONLOGON

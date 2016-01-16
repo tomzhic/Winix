@@ -3,4 +3,4 @@ set MOBAXTERM_ZIP=%SCRIPT_PATH%\dist\MobaXterm_v7.6.zip
 
 mkdir %MOBAXTERM_ROOT%
 "%UNZIPPER%" -o "%MOBAXTERM_ZIP%" -d "%MOBAXTERM_ROOT%"
-copy %CYGWIN_ROOT%\xcfg\MobaXterm.ini %MOBAXTERM_ROOT%\
+copy %CYGWIN_ROOT%\xcfg\windows\MobaXterm.ini %MOBAXTERM_ROOT%\

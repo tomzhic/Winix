@@ -15,9 +15,9 @@ rem vimrc
 
 rem oh-my-config
 %CYGWIN_ROOT%\bin\bash -l -c "git clone https://github.com/kiddlu/oh-my-config.git /xcfg"
-%CYGWIN_ROOT%\bin\bash -l -c "\\cp /xcfg/.* ~/ > /dev/null 2>&1"
-%CYGWIN_ROOT%\bin\bash -l -c "\\cp -rf /xcfg/.config/ ~/ > /dev/null 2>&1"
-%CYGWIN_ROOT%\bin\bash -l -c "\\cp -rf /xcfg/Cygwin.etc.fstab /etc/fstab > /dev/null 2>&1"
+%CYGWIN_ROOT%\bin\bash -l -c "\\cp /xcfg/cygwin/.* ~/ > /dev/null 2>&1"
+%CYGWIN_ROOT%\bin\bash -l -c "\\cp -rf /xcfg/cygwin/.config/ ~/ > /dev/null 2>&1"
+%CYGWIN_ROOT%\bin\bash -l -c "\\cp -rf /xcfg/cygwin/Cygwin.etc.fstab /etc/fstab > /dev/null 2>&1"
 
 rem hello-cygwin
 %CYGWIN_ROOT%\bin\bash -l -c "git clone https://github.com/kiddlu/oh-my-tools.git /xbin"
