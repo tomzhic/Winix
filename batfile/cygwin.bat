@@ -26,17 +26,17 @@ rem hello-cygwin
 %CYGWIN_ROOT%\bin\bash -l -c "ln -s %WINIXROOT% /winix"
 
 rem assoc
-assoc .sh=Shell.File
-ftype Shell.File="%CYGWIN_ROOT%\bin\bash.exe" "%%1" %%*
-reg add "HKEY_CLASSES_ROOT\Shell.File\DefaultIcon" /ve /t REG_SZ /d "%CYGWIN_ROOT%\Cygwin-Terminal.ico,0" /f >nul
-
-assoc .py=Python.File
-ftype Python.File="%CYGWIN_ROOT%\bin\python2.7.exe" "%%1" %%*
-reg add "HKEY_CLASSES_ROOT\Python.File\DefaultIcon" /ve /t REG_SZ /d "%CYGWIN_ROOT%\Cygwin-Terminal.ico,0" /f >nul
-
-assoc .pl=Perl.File
-ftype Perl.File="%CYGWIN_ROOT%\bin\perl.exe" "%%1" %%*
-reg add "HKEY_CLASSES_ROOT\Perl.File\DefaultIcon" /ve /t REG_SZ /d "%CYGWIN_ROOT%\Cygwin-Terminal.ico,0" /f >nul
+::assoc .sh=Shell.File
+::ftype Shell.File="%CYGWIN_ROOT%\bin\bash.exe" "%%1" %%*
+::reg add "HKEY_CLASSES_ROOT\Shell.File\DefaultIcon" /ve /t REG_SZ /d "%CYGWIN_ROOT%\Cygwin-Terminal.ico,0" /f >nul
+::
+::assoc .py=Python.File
+::ftype Python.File="%CYGWIN_ROOT%\bin\python2.7.exe" "%%1" %%*
+::reg add "HKEY_CLASSES_ROOT\Python.File\DefaultIcon" /ve /t REG_SZ /d "%CYGWIN_ROOT%\Cygwin-Terminal.ico,0" /f >nul
+::
+::assoc .pl=Perl.File
+::ftype Perl.File="%CYGWIN_ROOT%\bin\perl.exe" "%%1" %%*
+::reg add "HKEY_CLASSES_ROOT\Perl.File\DefaultIcon" /ve /t REG_SZ /d "%CYGWIN_ROOT%\Cygwin-Terminal.ico,0" /f >nul
 
 rem wget setup-x86_64.exe
 copy %CYGWIN_SETUP% %CYGWIN_ROOT%\
