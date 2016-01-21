@@ -34,7 +34,6 @@ Winix
 	Python            2.7.10
 	MobaXterm         7.6
 	adbputty          EN-0.66
-	Linux ramparser   2.0
 	Notepad++         6.8.6
 	Sublime Text      2.0.2
 	HTTP File Server  2.3g

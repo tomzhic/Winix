@@ -9,7 +9,6 @@ set cygwin=1
 set cmder=1
 set mobaxterm=1
 set adbputty=1
-set ramparser=1
 set notepadpp=1
 set sublime=1
 set hfs=1
@@ -81,8 +80,6 @@ if defined python call %SCRIPT_PATH%\batfile\python.bat
 if defined mobaxterm call %SCRIPT_PATH%\batfile\mobaxterm.bat
 
 if defined adbputty call %SCRIPT_PATH%\batfile\adbputty.bat
-
-if defined ramparser call %SCRIPT_PATH%\batfile\ramparser.bat
 
 if defined notepadpp call %SCRIPT_PATH%\batfile\notepadpp.bat
 
