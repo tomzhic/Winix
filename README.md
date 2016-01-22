@@ -1,7 +1,7 @@
 Winix
 ----------
 
-#### An excellent Windows environment which makes your work more effective and your life more buteaful
+#### An excellent Windows environment
 
 ##### It contains lots of great software like: 
 	Cmder: a great console emulator for Windows
