@@ -1,5 +1,5 @@
 set MOBAXTERM_ROOT=%WINIXROOT%\MobaXterm
-set MOBAXTERM_ZIP=%SCRIPT_PATH%\dist\MobaXterm_v7.6.zip
+set MOBAXTERM_ZIP=%SCRIPT_PATH%\dist\MobaXterm_v8.6.zip
 
 mkdir %MOBAXTERM_ROOT%
 "%UNZIPPER%" -o "%MOBAXTERM_ZIP%" -d "%MOBAXTERM_ROOT%"

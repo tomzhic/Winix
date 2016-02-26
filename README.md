@@ -31,8 +31,7 @@ Winix
 	Current Packages Version:
 	Cygwin            2.873
 	Cmder             1.2.0
-	Python            2.7.10
-	MobaXterm         7.6
+	MobaXterm         8.6
 	adbputty          EN-0.66
 	Notepad++         6.8.6
 	Sublime Text      2.0.2
