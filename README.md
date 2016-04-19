@@ -32,7 +32,6 @@ Winix
 	Cygwin            2.873
 	Cmder             1.2.0
 	MobaXterm         8.6
-	adbputty          EN-0.66
 	Notepad++         6.8.6
 	Sublime Text      2.0.2
 	HTTP File Server  2.3g

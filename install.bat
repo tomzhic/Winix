@@ -8,7 +8,6 @@ rem if you do want to install any package, just rem it, like
 set cygwin=1
 set cmder=1
 set mobaxterm=1
-set adbputty=1
 set notepadpp=1
 set sublime=1
 set hfs=1
@@ -56,6 +55,7 @@ set filelocator=1
 set qwinff=1
 set ditto=1
 set autohotkey=1
+set tbn=1
 
 set clean=1
 
@@ -174,6 +174,8 @@ if defined qwinff call %SCRIPT_PATH%\batfile\qwinff.bat
 if defined ditto call %SCRIPT_PATH%\batfile\ditto.bat
 
 if defined autohotkey call %SCRIPT_PATH%\batfile\autohotkey.bat
+
+if defined tbn call %SCRIPT_PATH%\batfile\tbn.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot
