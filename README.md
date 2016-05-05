@@ -79,6 +79,9 @@ Winix
 	QWinFF            0.2.1
 	Ditto             3.21.30
 	AutoHotkey        1.1.22.09
+	Sysinternals      April 28, 2016
+	you-get           0.4.390
+	Lantern           2.1.2
 
 #### TODO
 	Paint.net

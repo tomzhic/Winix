@@ -56,6 +56,9 @@ set qwinff=1
 set ditto=1
 set autohotkey=1
 set tbn=1
+set sysinternals=1
+set youget=1
+set lantern=1
 
 set clean=1
 
@@ -176,6 +179,12 @@ if defined ditto call %SCRIPT_PATH%\batfile\ditto.bat
 if defined autohotkey call %SCRIPT_PATH%\batfile\autohotkey.bat
 
 if defined tbn call %SCRIPT_PATH%\batfile\tbn.bat
+
+if defined sysinternals call %SCRIPT_PATH%\batfile\sysinternals.bat
+
+if defined youget call %SCRIPT_PATH%\batfile\youget.bat
+
+if defined lantern call %SCRIPT_PATH%\batfile\lantern.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot
