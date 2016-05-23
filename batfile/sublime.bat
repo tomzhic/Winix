@@ -9,7 +9,7 @@ xcopy %CYGWIN_ROOT%\mysublime\Data %SUBLIME_ROOT%\Data /E /Y
 xcopy %CYGWIN_ROOT%\mysublime\Pristine Packages\Package Control.sublime-package %SUBLIME_ROOT%\Pristine Packages\ /E /Y
 %CYGWIN_ROOT%\bin\bash -l -c "rm -rf /mysublime"
 
-reg add "HKEY_CLASSES_ROOT\*\shell\SubLime" /ve /t REG_SZ /d "Edit with Sublime Text" /f >nul
-reg add "HKEY_CLASSES_ROOT\*\shell\SubLime\Command" /ve /t REG_SZ /d "\"%SUBLIME_ROOT%\sublime_text.exe\" \"%%1\"" /f >nul
-reg add "HKEY_CLASSES_ROOT\Directory\shell\SubLime" /ve /t REG_SZ /d "Edit with Sublime Text" /f >nul
-reg add "HKEY_CLASSES_ROOT\Directory\shell\SubLime\Command" /ve /t REG_SZ /d "\"%SUBLIME_ROOT%\sublime_text.exe\" \"%%1\"" /f >nul
+:: reg add "HKEY_CLASSES_ROOT\*\shell\SubLime" /ve /t REG_SZ /d "Edit with Sublime Text" /f >nul
+:: reg add "HKEY_CLASSES_ROOT\*\shell\SubLime\Command" /ve /t REG_SZ /d "\"%SUBLIME_ROOT%\sublime_text.exe\" \"%%1\"" /f >nul
+:: reg add "HKEY_CLASSES_ROOT\Directory\shell\SubLime" /ve /t REG_SZ /d "Edit with Sublime Text" /f >nul
+:: reg add "HKEY_CLASSES_ROOT\Directory\shell\SubLime\Command" /ve /t REG_SZ /d "\"%SUBLIME_ROOT%\sublime_text.exe\" \"%%1\"" /f >nul

@@ -59,6 +59,7 @@ set tbn=1
 set sysinternals=1
 set youget=1
 set lantern=1
+set emacs=1
 
 set clean=1
 
@@ -185,6 +186,8 @@ if defined sysinternals call %SCRIPT_PATH%\batfile\sysinternals.bat
 if defined youget call %SCRIPT_PATH%\batfile\youget.bat
 
 if defined lantern call %SCRIPT_PATH%\batfile\lantern.bat
+
+if defined emacs call %SCRIPT_PATH%\batfile\emacs.bat
 
 if not defined clean goto END
 echo Now We need to clean & reboot
