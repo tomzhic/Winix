@@ -48,14 +48,14 @@ Winix
 	PicPick           4.0.8
 	Foobar2000        1.3.9
 	VLC               2.2.1
-	SMPlayer          15.9.0
+	SMPlayer          16.4.0.0
 	SumatraPDF        3.1.1
 	FileZilla         3.18.0
 	LinuxReader       2.3
 	XLaunchPad        1.0.9.518
 	CCleaner          5.12.5413
 	Rocketdock        1.3.5
-	7-Zip             15.12
+	7-Zip             16.02
 	XnView            2.34
 	DiskGenius        4.7.2.155
 	FileTypesMan      1.82
@@ -77,7 +77,7 @@ Winix
 	Meld              3.14.2
 	FileLocatorLite   Build 828
 	QWinFF            0.2.1
-	Ditto             3.21.30
+	Ditto             3.21.50
 	AutoHotkey        1.1.22.09
 	Sysinternals      April 28, 2016
 	you-get           0.4.390

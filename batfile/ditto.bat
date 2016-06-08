@@ -1,5 +1,5 @@
 set Ditto_ROOT=%WINIXROOT%\Ditto
-set Ditto_ZIP=%SCRIPT_PATH%\dist\DittoPortable_64bit_3_21_30_0.zip
+set Ditto_ZIP=%SCRIPT_PATH%\dist\DittoPortable_3_21_50_0.zip
 
 mkdir %Ditto_ROOT%
 "%UNZIPPER%" -o "%Ditto_ZIP%" -d "%Ditto_ROOT%"

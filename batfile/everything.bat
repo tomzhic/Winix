@@ -1,5 +1,5 @@
 set EVERYTHING_ROOT=%WINIXROOT%\Everything
-set EVERYTHING_ZIP=%SCRIPT_PATH%\dist\Everything-1.3.4.686.x64.Multilingual.zip
+set EVERYTHING_ZIP=%SCRIPT_PATH%\dist\Everything-1.3.4.686.x86.Multilingual.zip
 
 mkdir %EVERYTHING_ROOT%
 "%UNZIPPER%" -o "%EVERYTHING_ZIP%" -d "%EVERYTHING_ROOT%"

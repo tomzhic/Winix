@@ -9,7 +9,7 @@ set cygwin=1
 set cmder=1
 set mobaxterm=1
 set notepadpp=1
-set sublime=1
+::set sublime=1
 set hfs=1
 set everything==1
 set listary==1

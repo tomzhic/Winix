@@ -5,7 +5,7 @@ set CYGWIN_MIRROR=http://mirrors.163.com/cygwin
 %CYGWIN_SETUP% -q -g -n -s "%CYGWIN_MIRROR%" -R "%CYGWIN_ROOT%" -l "%CYGWIN_ROOT%\dist" ^
 -P git -P wget -P curl -P vim -P zsh -P gitk -P shutdown -P xorg-server -P oxygen-fonts ^
 -P dos2unix -P procps -P psmisc -P patch -P sqlite3 -P tmux -P tree -P iperf -P cpio -P texinfo ^
--P automake -P autoconf -P bison -P flex -P cmake -P gcc-core -P gcc-g++ -P m4
+-P automake -P autoconf -P bison -P flex -P cmake -P gcc-core -P gcc-g++ -P m4 -P unzip
 
 rem oh-my-zsh
 %CYGWIN_ROOT%\bin\bash -l -c "wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh"
