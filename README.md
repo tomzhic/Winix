@@ -39,7 +39,7 @@ Winix
 	Listary           4.23.1728
 	MarkdownPad       2.5.0.27920(Require .NET Framework 4 Client Profile)
 	PSPad             4.6.0
-	Fastcopy          3.09
+	Fastcopy          3.13
 	VbsToExe          2.0.5.0
 	BatToExe          2.3.3.0
 	GifCam            5.1
@@ -50,7 +50,7 @@ Winix
 	VLC               2.2.1
 	SMPlayer          15.9.0
 	SumatraPDF        3.1.1
-	FileZilla         3.14.1
+	FileZilla         3.18.0
 	LinuxReader       2.3
 	XLaunchPad        1.0.9.518
 	CCleaner          5.12.5413
@@ -58,8 +58,8 @@ Winix
 	7-Zip             15.12
 	XnView            2.34
 	DiskGenius        4.7.2.155
-	FileTypesMan      1.8
-	ProduKey          1.8.1
+	FileTypesMan      1.82
+	ProduKey          1.8.3
 	Speccy            1.28.709
 	Dexpot            1.6.14
 	AeroEnabler       1.0.0.4
